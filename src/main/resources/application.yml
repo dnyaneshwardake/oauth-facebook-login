@@ -1,0 +1,17 @@
+security:
+  oauth2:
+    client:      client-id: 724791421429771
+      client-secret: 1211bc4d12846c426722bccaa67ca625
+      accessTokenUri: https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://graph.facebook.com/me
+      
+      
+server:  port: 8081  ssl:    key-alias: https-example
+    key-store-type: JKS
+    key-password: password
+    key-store: classpath:https-example.jks
